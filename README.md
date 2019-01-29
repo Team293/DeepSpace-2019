@@ -1,6 +1,11 @@
 # DeepSpace-2019
 This is FRC Team 293's code for the 2019 game: FIRST-Deep Space.
 
+## Installing FRC development tools
+
+Instructions and downloads for FRC development tools, i.e. RobotBuilder, VS Code, WPILib, can be found here:
+https://wpilib.screenstepslive.com/s/currentCS/m/getting_started/l/999999-installing-c-and-java-development-tools-for-frc
+
 ## Instructions for downloading this Git repository
 
 We'd like commits to github.com to be tagged with the coder's name instead of a common name like "Spike" so if you're working on one of common team laptops, create your own clone of the repository. 
