@@ -12,3 +12,12 @@ This will create the folder "Kolb" and clone the git project into that folder. N
 
 Run RobotBuilder and open the YAML file in the cloned respository folder.  The RobotBuilder file should be configured to generate the java source code and wiring file in folders relative to the YAML file under your local git repository.  Any commits that you make from there will be properly tagged with your name and email.
   
+## Installing Vendor Libraries
+
+Here's a blog post on how to install the Phoenix libraries:
+https://phoenix-documentation.readthedocs.io/en/latest/ch05_PrepWorkstation.html#before-installing-phoenix
+
+Download the Windows installer from:
+https://github.com/CrossTheRoadElec/Phoenix-Releases/releases/download/Phoenix_v5.12.1.0/CTRE.Phoenix.Framework.v5.12.1.0.zip
+
+Run the installer program in the zip file.
