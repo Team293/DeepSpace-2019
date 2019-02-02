@@ -45,6 +45,7 @@ public class PusherOut extends TimedCommand {
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
+        Robot.gripper.pusherOut();
     }
 
 
@@ -57,5 +58,6 @@ public class PusherOut extends TimedCommand {
     // subsystems is scheduled to run
     @Override
     protected void interrupted() {
+        Robot.gripper.pusherOut();
     }
 }
