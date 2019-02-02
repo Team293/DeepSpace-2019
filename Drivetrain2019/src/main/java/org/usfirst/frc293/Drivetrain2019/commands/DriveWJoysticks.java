@@ -44,6 +44,7 @@ public class DriveWJoysticks extends Command {
     @Override
     protected void execute() {
         Robot.drivetrain.velocityDrive(Robot.oi.getLeftJoystick(), Robot.oi.getRightJoystick());
+        //Robot.drivetrain.full();
     }
 
     // Make this return true when this Command no longer needs to run execute()
