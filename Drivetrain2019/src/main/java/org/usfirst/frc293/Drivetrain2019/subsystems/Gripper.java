@@ -85,19 +85,19 @@ public class Gripper extends Subsystem {
     // here. Call these from Commands.
 
     public void openGripper(){
-        doubleSolenoid1.set(Value.kForward);
+        doubleSolenoid1.set(Value.kReverse); // Reversed for some reason
     }
     public void closeGripper(){
-        doubleSolenoid1.set(Value.kReverse);
+        doubleSolenoid1.set(Value.kForward);
     }
     public void offGripper(){
         doubleSolenoid1.set(Value.kOff);
     }
-    public void pusherOut(){
-        doubleSolenoid2.set(Value.kForward);
-    }
     public void pusherIn(){
         doubleSolenoid2.set(Value.kReverse);
+    }
+    public void pusherOut(){
+        doubleSolenoid2.set(Value.kForward);
     }
     public void pusherOff(){
         doubleSolenoid2.set(Value.kOff);
