@@ -43,6 +43,7 @@ public class DriveWJoysticks extends Command {
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
+        Robot.drivetrain.velocityDrive(Robot.oi.getLeftJoystick(), Robot.oi.getRightJoystick());
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -60,5 +61,6 @@ public class DriveWJoysticks extends Command {
     // subsystems is scheduled to run
     @Override
     protected void interrupted() {
+        Robot.drivetrain.stop();
     }
 }
