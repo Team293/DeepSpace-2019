@@ -26,3 +26,9 @@ Download the Windows installer from:
 https://github.com/CrossTheRoadElec/Phoenix-Releases/releases/download/Phoenix_v5.12.1.0/CTRE.Phoenix.Framework.v5.12.1.0.zip
 
 Run the installer program in the zip file.
+
+Here's the documentation on installing the Spark Max library
+http://www.revrobotics.com/sparkmax-software/#java-api
+
+Here's the installer for the Spark Max client
+http://www.revrobotics.com/sparkmax-software/#spark-max-client-application
