@@ -108,13 +108,13 @@ Children:
           default: '0'
           name: Reverse Channel (Solenoid)
           validators: &id008 [Solenoid]
-          value: '1'
+          value: '0'
         Forward Channel (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
           choices: &id009 ['0', '1', '2', '3', '4', '5', '6', '7']
           default: '0'
           name: Forward Channel (Solenoid)
           validators: &id010 [Solenoid]
-          value: '0'
+          value: '1'
       Base: Double Solenoid
       Name: Double Solenoid 1
     - Children: []
@@ -768,7 +768,7 @@ Children:
               supports: {}
               type: Command
             name: PusherOut
-            properties:
+            properties: &id028
               Autonomous Selection: !!robotbuilder.data.properties.BooleanProperty {
                 default: false, name: Autonomous Selection, validators: null, value: false}
               Parameters: !!robotbuilder.data.properties.ParametersProperty
@@ -797,7 +797,7 @@ Children:
             validators: null
             value:
             - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: timeout,
-              type: double, value: '1'}
+              type: double, value: '0'}
           previous: null
         - !!robotbuilder.data.CommandGroupEntry
           command:
@@ -843,28 +843,7 @@ Children:
     Base: Command Group
     Name: Shoot
   - Children: []
-    Properties:
-      Autonomous Selection: !!robotbuilder.data.properties.BooleanProperty {default: false,
-        name: Autonomous Selection, validators: null, value: false}
-      Parameters: !!robotbuilder.data.properties.ParametersProperty
-        default:
-        - &id028 !!robotbuilder.data.properties.ParameterDescriptor {name: timeout,
-          type: double}
-        name: Parameters
-        validators: null
-        value:
-        - *id028
-      Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
-        name: Run When Disabled, validators: null, value: false}
-      Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
-        name: Requires, type: Subsystem, validators: null, value: Gripper}
-      Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
-        default: &id029 []
-        name: Parameter presets
-        validators: null
-        value: *id029
-      Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
-        name: Button on SmartDashboard, validators: null, value: true}
+    Properties: *id028
     Base: Timed Command
     Name: PusherOut
   - Children: []
@@ -881,10 +860,10 @@ Children:
       Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Requires, type: Subsystem, validators: null, value: Elevator}
       Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
-        default: &id030 []
+        default: &id029 []
         name: Parameter presets
         validators: null
-        value: *id030
+        value: *id029
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
     Base: Command
@@ -903,10 +882,10 @@ Children:
       Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Requires, type: Subsystem, validators: null, value: Gripper}
       Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
-        default: &id031 []
+        default: &id030 []
         name: Parameter presets
         validators: null
-        value: *id031
+        value: *id030
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
     Base: Command
